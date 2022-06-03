@@ -13,7 +13,7 @@ class Example(ttk.Frame):
         Конструктов приложения с инициализацией метода построения интерфейса.
         :param parent: ссылка на родительское окно приложения
         """
-        ttk.Frame.__init__(self, parent)  # вызов конструктора родительского класса
+        ttk.Frame.__init__(self)  # вызов конструктора родительского класса
         self.parent = parent  # сохранение ссылки на основное окно
         self.entry = ttk.Entry(self, font=('serif', 12), justify=tk.RIGHT)  # создание текстового однострочного поля
         self.entry.insert(tk.END, '0')  # базовый ноль на экране
